@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>illusion</title>
+  </head>
+  <style>
+    h1{
+      color: white;
+    }
+    body {
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      min-height: 100vh;
+    }
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .slider {
+      height: 200px; /* Adjust as needed */
+      width: 80%; /* Adjust as needed */
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-bottom: 20px;
+    }
+    .slide-track {
+      display: flex;
+      animation: scroll 60s linear infinite;
+    }
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-250px * 7));
+      }
+    }
+    .slide {
+      height: 150px; /* Adjust as needed */
+      width: 155px; /* Adjust as needed */
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      perspective: 100px;
+    }
+    img {
+      width: 100%;
+      height: 93%;
+      transition: transform 1s;
+      border-radius: 90px 188px;
+    }
+    img:hover {
+      transform: translateZ(20px);
+      border-radius: 80px 80px;
+    }
+    .slider::after,
+    .slide::before {
+      content: "";
+      height: 75%;
+      position: absolute;
+      width: 1%;
+      z-index: 1;
+    }
+    .slide::before {
+      left: 0;
+      right: 0;
+    }
+    .slide::after {
+      right: 0;
+      top: 0;
+      transform: rotate(180deg);
+    }
+  </style>
+  <body>
+    <h1>    "Exploring the Cosmos: Planets and Galaxies"
+    </h1>
+     
+    <h1
+      style="
+        text-align: center;
+        color: white;
+        padding: 20px;
+        font-size: 20px;
+        cursor: pointer;
+      "
+    >what is outside the earth?
+    </h1>
+        <p>Explore further:</p>
+        <a href="https://www.google.com" target="_blank">Google</a>
+      </form>
+    </div>
+    <video src="loop1 (2).mp4" autoplay loop muted playsinline></video>
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide">
+          <img src="img1.png" />
+          <div class="slide-content"></div>
+        </div>
+        <div class="slide">
+          <img src="img2.png" />
+          <div class="slide-content"></div>
+        </div>
+        <div class="slide">
+          <img src="img3.png" />
+          <div class="slide-content"></div>
+        </div>
+        <div class="slide">
+          <img src="img4.png" />
+          <div class="slide-content"></div>
+        </div>
+        <div class="slide">
+          <img src="img5.png" />
+          <div class="slide-content"></div>
+        </div>
+        <div class="slide">
+          <img src="img6.png" />
+          <div class="slide-content"></div>
+        </div>
+        <div class="slide">
+          <img src="img7.png" />
+          <div class="slide-content"></div>
+        </div>
+
+        <div class="slide">
+          <img src="img1.png" />
+          <div class="slide-content"></div>
+        </div>
+        <div class="slide">
+          <img src="img2.png" />
+          <div class="slide-content"></div>
+        </div>
+        <div class="slide">
+          <img src="img3.png" />
+          <div class="slide-content"></div>
+        </div>
+        <div class="slide">
+          <img src="img4.png" />
+          <div class="slide-content"></div>
+        </div>
+        <div class="slide">
+          <img src="img5.png" />
+          <div class="slide-content"></div>
+        </div>
+        <div class="slide">
+          <img src="img6.png" />
+          <div class="slide-content"></div>
+        </div>
+        <div class="slide">
+          <img src="img7.png" />
+          <div class="slide-content"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Get all slide elements
+      const slides = document.querySelectorAll(".slide");
+
+      // Add click event listener to each slide
+      slides.forEach((slide) => {
+        slide.addEventListener("click", () => {
+          window.open("https://www.youtube.com/watch?v=libKVRa01L8", "_blank");
+        });
+      });
+
+      
+    </script>
+  </body>
+</html>
